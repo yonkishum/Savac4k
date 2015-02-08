@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Savac4k</string>
+
+    <string name="hello_world">Hola Mundo!</string>
+    <string name="action_settings">Ajustes</string>
+    
+    <string name="welcome">Bienvenido</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Entrar</string>
+    <string name="signup">¿No tienes una Cuenta? Registrate</string>
+    
+</resources>

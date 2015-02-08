@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#EBF2BB</color>
+    <color name="bg_gradient_start">#9DD6D2</color>
+    <color name="bg_gradient_end">#CAECF3</color>
+    <color name="bg_button_login">#C9B7CB</color>
+</resources>
