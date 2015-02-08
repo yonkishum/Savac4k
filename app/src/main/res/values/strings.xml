@@ -8,6 +8,16 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-    <string name="signup">Don't have account? Sign Up </string>
+    <string name="signup">Don\'t have account? Sign Up </string>
+    <string name="register">Register</string>
+    <string name="na">Name</string>
+
+    <string-array name="pick">
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <string name="picke">Choose a Language</string>
+    <string name="title_activity_register">Registro</string>
 
 </resources>

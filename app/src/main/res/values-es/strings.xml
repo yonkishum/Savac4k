@@ -9,5 +9,13 @@
     <string name="password">Contraseña</string>
     <string name="login">Entrar</string>
     <string name="signup">¿No tienes una Cuenta? Registrate</string>
-    
+
+    <string-array name="pick">
+        <item>Ingles</item>
+        <item>Español</item>
+    </string-array>
+
+    <string name="picke">Seleccione un Idioma</string>
+
+
 </resources>

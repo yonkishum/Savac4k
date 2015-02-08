@@ -1,40 +1,24 @@
 package yan.samux.ikaros.com.savac4k;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
 
 
-public class Login extends ActionBarActivity {
-
-	TextView mRegister;
+public class Register extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_login);
-
-		mRegister = (TextView) findViewById(R.id.registrar);
-
-		mRegister.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Intent start = new Intent(getApplicationContext(), Register.class);
-				startActivity(start);
-			}
-		});
-
+		setContentView(R.layout.activity_register);
 	}
 
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_login, menu);
+		getMenuInflater().inflate(R.menu.menu_register, menu);
 		return true;
 	}
 
