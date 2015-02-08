@@ -22,6 +22,10 @@
             android:name=".Register"
             android:label="@string/title_activity_register" >
         </activity>
+        <activity
+            android:name=".Main"
+            android:label="@string/main">
+        </activity>
     </application>
 
 </manifest>
