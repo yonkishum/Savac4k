@@ -65,13 +65,11 @@ public class Main extends Activity {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getActionBar().setHomeButtonEnabled(true);
 
-		//Arreglar todo esto
-
 		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
 				R.drawable.ic_drawer, //nav menu toggle icon
 				R.string.app_name, // nav drawer open - description for accessibility
 				R.string.app_name // nav drawer close - description for accessibility
-		){
+		) {
 			public void onDrawerClosed(View view) {
 				getActionBar().setTitle(mTitle);
 				// calling onPrepareOptionsMenu() to show action bar icons
@@ -92,7 +90,7 @@ public class Main extends Activity {
 		}
 	}
 
-	/***
+	/**
 	 * Called when invalidateOptionsMenu() is triggered
 	 */
 	@Override
@@ -127,5 +125,5 @@ public class Main extends Activity {
 		// Pass any configuration change to the drawer toggls
 		mDrawerToggle.onConfigurationChanged(newConfig);
 	}
-	}
+}
 }
