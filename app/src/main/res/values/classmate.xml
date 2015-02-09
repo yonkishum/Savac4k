@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clases">
+        <item>Básico</item>
+        <item>Números</item>
+        <item>Animales</item>
+        <item>Objetos</item>
+        <item>Países</item>
+        <item>Gestos</item>
+        <item>Acciones</item>
+    </string-array>
+
+    <array name="pic_clases">
+        <item>@drawable/ic_learning_basic</item>
+        <item>@drawable/ic_learning_numbers</item>
+        <item>@drawable/ic_learning_animals</item>
+        <item>@drawable/ic_learning_object</item>
+        <item>@drawable/ic_learning_country</item>
+        <item>@drawable/ic_learning_gesture</item>
+        <item>@drawable/ic_learning_run</item>
+    </array>
+
+</resources>

@@ -2,16 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="yan.samux.ikaros.com.savac4k.fragments.LearningFragment"
-    android:background="#ff449dff">
+    android:background="#C9B7CB">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Learning Fragment"
-        android:id="@+id/textView2"
+        android:text="Acceder"
+        android:id="@+id/bt_learning"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
