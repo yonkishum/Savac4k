@@ -55,21 +55,33 @@ public class Activity_Learn extends ActionBarActivity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				switch (position) {
-					case 1:
+					case 0:
 						start = new Intent(getApplicationContext(), cBasico.class);
 						startActivity(start);
 						break;
+					case 1:
+                        start = new Intent(getApplicationContext(), cNumbers.class);
+                        startActivity(start);
+						break;
 					case 2:
+                        start = new Intent(getApplicationContext(), cAnimales.class);
+                        startActivity(start);
 						break;
 					case 3:
+                        start = new Intent(getApplicationContext(), cObject.class);
+                        startActivity(start);
 						break;
 					case 4:
+                        start = new Intent(getApplicationContext(), cCountry.class);
+                        startActivity(start);
 						break;
 					case 5:
+                        start = new Intent(getApplicationContext(), cGesture.class);
+                        startActivity(start);
 						break;
 					case 6:
-						break;
-					case 7:
+                        start = new Intent(getApplicationContext(), cActions.class);
+                        startActivity(start);
 						break;
 				}
 			}

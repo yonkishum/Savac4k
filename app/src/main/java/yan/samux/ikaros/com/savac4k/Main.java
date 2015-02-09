@@ -1,6 +1,7 @@
 package yan.samux.ikaros.com.savac4k;
 
 import yan.samux.ikaros.com.savac4k.adapter.NavDrawerListAdapter;
+import yan.samux.ikaros.com.savac4k.fragments.GraphicFragment;
 import yan.samux.ikaros.com.savac4k.fragments.HomeFragment;
 import yan.samux.ikaros.com.savac4k.fragments.LearningFragment;
 import yan.samux.ikaros.com.savac4k.fragments.TestFragment;
@@ -67,6 +68,8 @@ public class Main extends ActionBarActivity{
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
 
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1)));
+
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(2, -1)));
 
 
         // Recycle the typed array
@@ -168,6 +171,9 @@ public class Main extends ActionBarActivity{
                 break;
             case 2:
                 fragment = new TestFragment();
+                break;
+            case 3:
+                fragment = new GraphicFragment();
                 break;
             default:
                 break;

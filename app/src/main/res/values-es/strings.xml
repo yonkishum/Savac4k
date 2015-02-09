@@ -17,5 +17,17 @@
 
     <string name="picke">Seleccione un Idioma</string>
 
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_activity__learn">Aprender</string>
+    <string name="choose">Seleccione una Clase</string>
+    <string name="title_activity_c_basico">Básico</string>
+
+    <string name="title_activity_c_numbers">Número</string>
+    <string name="title_activity_c_animales">Animales</string>
+    <string name="title_activity_c_object">Objetos</string>
+    <string name="title_activity_c_country">Paises</string>
+    <string name="title_activity_c_gesture">Gestos</string>
+    <string name="title_activity_c_actions">Acciones</string>
+
 
 </resources>
