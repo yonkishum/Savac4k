@@ -1,16 +1,20 @@
 package yan.samux.ikaros.com.savac4k;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import yan.samux.ikaros.com.savac4k.clases.*;
 
 
 public class Activity_Learn extends ActionBarActivity {
@@ -43,6 +47,34 @@ public class Activity_Learn extends ActionBarActivity {
 		classAdapter adapter = new classAdapter(this, nClass, iClass);
 
 		mlista.setAdapter(adapter);
+
+		mlista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+			Intent start;
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				switch (position) {
+					case 1:
+						start = new Intent(getApplicationContext(), cBasico.class);
+						startActivity(start);
+						break;
+					case 2:
+						break;
+					case 3:
+						break;
+					case 4:
+						break;
+					case 5:
+						break;
+					case 6:
+						break;
+					case 7:
+						break;
+				}
+			}
+		});
+
 
 	}
 }
