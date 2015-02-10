@@ -49,5 +49,11 @@
     <string name="title_activity_c_country">Country</string>
     <string name="title_activity_c_gesture">Gesture</string>
     <string name="title_activity_c_actions">Actions</string>
+    <string name="title_activity_prueba_library">pruebaLibrary</string>
+
+    <string name="complete">Completed</string>
+    <string name="error">Error!</string>
+    <string name="upload">Upload</string>
+    <string name="title_activity_prueba">pruebaActivity</string>
 
 </resources>

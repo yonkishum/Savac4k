@@ -9,11 +9,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import yan.samux.ikaros.com.savac4k.pruebas.pruebaActivity;
+
 
 public class Login extends ActionBarActivity {
 
-	TextView mRegister;
-    Button mLogin;
+	TextView mRegister, trylibs;
+	Button mLogin;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,21 +23,30 @@ public class Login extends ActionBarActivity {
 		setContentView(R.layout.activity_login);
 
 		mRegister = (TextView) findViewById(R.id.registrar);
+		trylibs = (TextView) findViewById(R.id.textView5);
 
-        mLogin = (Button) findViewById(R.id.login);
+		mLogin = (Button) findViewById(R.id.login);
 
-        mLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent login = new Intent(getApplicationContext(), Main.class);
-                startActivity(login);
-            }
-        });
+		mLogin.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent login = new Intent(getApplicationContext(), Main.class);
+				startActivity(login);
+			}
+		});
 
 		mRegister.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent start = new Intent(getApplicationContext(), Register.class);
+				startActivity(start);
+			}
+		});
+
+		trylibs.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent start = new Intent(getApplicationContext(), pruebaActivity.class);
 				startActivity(start);
 			}
 		});
