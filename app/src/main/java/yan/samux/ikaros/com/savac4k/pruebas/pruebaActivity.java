@@ -2,8 +2,6 @@ package yan.samux.ikaros.com.savac4k.pruebas;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import java.util.ArrayList;
 
@@ -11,7 +9,6 @@ import it.gmariotti.cardslib.library.internal.Card;
 import it.gmariotti.cardslib.library.internal.CardArrayAdapter;
 import it.gmariotti.cardslib.library.internal.CardHeader;
 import it.gmariotti.cardslib.library.view.CardListView;
-import it.gmariotti.cardslib.library.view.CardView;
 import yan.samux.ikaros.com.savac4k.R;
 
 public class pruebaActivity extends ActionBarActivity {
