@@ -83,6 +83,7 @@ public class Activity_Learn extends ActionBarActivity {
                         start = new Intent(getApplicationContext(), cActions.class);
                         startActivity(start);
 						break;
+
 				}
 			}
 		});
