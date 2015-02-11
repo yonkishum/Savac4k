@@ -56,5 +56,7 @@
     <string name="error">Error!</string>
     <string name="upload">Upload</string>
     <string name="title_activity_prueba">pruebaActivity</string>
+    <string name="title_activity_base_prueba">BasePrueba</string>
+    <string name="title_activity_prueba_picasso">PruebaPicasso</string>
 
 </resources>

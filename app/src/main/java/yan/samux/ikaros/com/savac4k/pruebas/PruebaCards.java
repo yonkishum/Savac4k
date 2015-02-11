@@ -13,7 +13,7 @@ import it.gmariotti.cardslib.library.internal.CardHeader;
 import it.gmariotti.cardslib.library.view.CardListView;
 import yan.samux.ikaros.com.savac4k.R;
 
-public class pruebaActivity extends ActionBarActivity {
+public class PruebaCards extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -40,19 +40,18 @@ public class pruebaActivity extends ActionBarActivity {
 			listView.setAdapter(mCardArrayAdapter);
 		}
 
-        card.setOnClickListener(new Card.OnCardClickListener() {
-            @Override
-            public void onClick(Card card, View view) {
-                Toast.makeText(pruebaActivity.this, card.getId() + " " + card.getTitle() + " ", Toast.LENGTH_SHORT).show();
-            }
-        });
+		card.setOnClickListener(new Card.OnCardClickListener() {
+			@Override
+			public void onClick(Card card, View view) {
+				Toast.makeText(PruebaCards.this, card.getId() + " " + card.getTitle() + " ", Toast.LENGTH_SHORT).show();
+			}
+		});
 
 		CardHeader cardHeader = new CardHeader(this);
 		cardHeader.setTitle("This is header");
 
 		card.setTitle("This is Title of Card");
 		card.addCardHeader(cardHeader);
-
 
 
 	}

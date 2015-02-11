@@ -3,6 +3,7 @@
           package="yan.samux.ikaros.com.savac4k">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -59,8 +60,16 @@
             android:label="@string/title_activity_c_actions">
         </activity>
         <activity
-            android:name=".pruebas.pruebaActivity"
+            android:name=".pruebas.PruebaCards"
             android:label="@string/title_activity_prueba">
+        </activity>
+        <activity
+            android:name=".pruebas.BasePrueba"
+            android:label="@string/title_activity_base_prueba">
+        </activity>
+        <activity
+            android:name=".pruebas.PruebaPicasso"
+            android:label="@string/title_activity_prueba_picasso">
         </activity>
     </application>
 

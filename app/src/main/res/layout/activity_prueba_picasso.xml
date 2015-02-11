@@ -6,11 +6,13 @@
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context="yan.samux.ikaros.com.savac4k.pruebas.PruebaCards">
+                tools:context="yan.samux.ikaros.com.savac4k.pruebas.PruebaPicasso">
 
-    <it.gmariotti.cardslib.library.view.CardListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/card_list"/>
-
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:id="@+id/Pica"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"/>
 </RelativeLayout>

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import yan.samux.ikaros.com.savac4k.pruebas.pruebaActivity;
+import yan.samux.ikaros.com.savac4k.pruebas.BasePrueba;
 
 
 public class Login extends ActionBarActivity {
@@ -46,7 +46,7 @@ public class Login extends ActionBarActivity {
 		trylibs.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent start = new Intent(getApplicationContext(), pruebaActivity.class);
+				Intent start = new Intent(getApplicationContext(), BasePrueba.class);
 				startActivity(start);
 			}
 		});
