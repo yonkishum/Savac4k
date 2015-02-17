@@ -10,9 +10,10 @@
 
     <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="400dp"
+        android:layout_height="200dp"
         android:id="@+id/Pica"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="84dp"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
 </RelativeLayout>
