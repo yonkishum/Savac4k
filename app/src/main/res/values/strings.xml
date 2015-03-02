@@ -29,6 +29,7 @@
         <item>Learn</item>
         <item>Test</item>
         <item>Graphics</item>
+        <item>Admin</item>
     </string-array>
 
     <array name="nav_drawer_icons">
