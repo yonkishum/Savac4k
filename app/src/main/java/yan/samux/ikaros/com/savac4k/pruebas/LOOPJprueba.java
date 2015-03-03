@@ -37,6 +37,7 @@ public class LOOPJprueba extends ActionBarActivity {
 
         AsyncHttpClient client = new AsyncHttpClient();
         String url = "http://192.168.0.107/savac4kcon/index.php"; //Hay que poner la IP de cada computadora en especifico Esta IP es de la PC Principal
+        String url2 = "http://192.168.56.1/savac4kcon/index.php"; //ip de la Laptop
 
         RequestParams params = new RequestParams();
 
