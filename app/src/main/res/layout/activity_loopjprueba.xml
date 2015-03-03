@@ -9,7 +9,8 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listausuarios"
+        android:id="@+id/listUsuario"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:choiceMode="singleChoice"/>
 </RelativeLayout>

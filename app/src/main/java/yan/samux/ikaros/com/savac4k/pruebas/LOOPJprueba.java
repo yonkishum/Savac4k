@@ -2,6 +2,7 @@ package yan.samux.ikaros.com.savac4k.pruebas;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
@@ -28,16 +29,14 @@ public class LOOPJprueba extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loopjprueba);
 
-        listadoyu = (ListView) findViewById(R.id.listausuarios);
-
+        listadoyu = (ListView) findViewById(R.id.listUsuario);
         getdata();
-
     }
 
     public void getdata() {
 
         AsyncHttpClient client = new AsyncHttpClient();
-        String url = "https://192.168.56.1/savac4kcon/index.php";
+        String url = "http://192.168.0.107/savac4kcon/index.php"; //Hay que poner la IP de cada computadora en especifico Esta IP es de la PC Principal
 
         RequestParams params = new RequestParams();
 
@@ -45,12 +44,14 @@ public class LOOPJprueba extends ActionBarActivity {
             @Override
             public void onSuccess(int i, Header[] headers, byte[] bytes) {
                 if (i==200){
-                    llenarlista(datosJSON(new String(bytes)));
+	                Log.v("Entro a la BD", "Entro y recibio el JSON");
+	                llenarlista(datosJSON(new String(bytes)));
                 }
             }
 
             @Override
             public void onFailure(int i, Header[] headers, byte[] bytes, Throwable throwable) {
+	            Log.v("No Entro a la BD", "No Entro y no recibio el JSON");
                 //Toast.makeText(this, "Error en la conexion", Toast.LENGTH_SHORT);
             }
         });
