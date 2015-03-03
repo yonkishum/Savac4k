@@ -10,7 +10,7 @@ import yan.samux.ikaros.com.savac4k.R;
 
 public class BasePrueba extends ActionBarActivity {
 
-	Button pruebas1, pruebas2;
+	Button pruebas1, pruebas2, pruebas3;
 	Intent go;
 
 	@Override
@@ -20,6 +20,7 @@ public class BasePrueba extends ActionBarActivity {
 
 		pruebas1 = (Button) findViewById(R.id.pruPicasso);
 		pruebas2 = (Button) findViewById(R.id.pruCards);
+		pruebas3 = (Button) findViewById(R.id.Loop);
 
 		pruebas1.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -33,6 +34,14 @@ public class BasePrueba extends ActionBarActivity {
 			@Override
 			public void onClick(View v) {
 				go = new Intent(getApplicationContext(), PruebaCards.class);
+				startActivity(go);
+			}
+		});
+
+		pruebas3.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				go = new Intent(getApplicationContext(), LOOPJprueba.class);
 				startActivity(go);
 			}
 		});
