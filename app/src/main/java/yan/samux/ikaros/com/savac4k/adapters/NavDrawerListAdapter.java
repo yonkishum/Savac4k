@@ -1,4 +1,4 @@
-package yan.samux.ikaros.com.savac4k.adapter;
+package yan.samux.ikaros.com.savac4k.adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import yan.samux.ikaros.com.savac4k.R;
-import yan.samux.ikaros.com.savac4k.model.NavDrawerItem;
+import yan.samux.ikaros.com.savac4k.models.NavDrawerItem;
 
 /**
  * Created by Ikaros on 08-02-2015.

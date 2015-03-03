@@ -1,11 +1,11 @@
 package yan.samux.ikaros.com.savac4k;
 
-import yan.samux.ikaros.com.savac4k.adapter.NavDrawerListAdapter;
+import yan.samux.ikaros.com.savac4k.adapters.NavDrawerListAdapter;
 import yan.samux.ikaros.com.savac4k.fragments.GraphicFragment;
 import yan.samux.ikaros.com.savac4k.fragments.HomeFragment;
 import yan.samux.ikaros.com.savac4k.fragments.LearningFragment;
 import yan.samux.ikaros.com.savac4k.fragments.TestFragment;
-import yan.samux.ikaros.com.savac4k.model.NavDrawerItem;
+import yan.samux.ikaros.com.savac4k.models.NavDrawerItem;
 
 import java.util.ArrayList;
 

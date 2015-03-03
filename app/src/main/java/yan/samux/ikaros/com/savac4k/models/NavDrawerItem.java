@@ -1,4 +1,4 @@
-package yan.samux.ikaros.com.savac4k.model;
+package yan.samux.ikaros.com.savac4k.models;
 
 /**
  * Created by Ikaros on 08-02-2015.

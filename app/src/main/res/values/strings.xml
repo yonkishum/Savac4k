@@ -59,5 +59,6 @@
     <string name="title_activity_prueba">pruebaActivity</string>
     <string name="title_activity_base_prueba">BasePrueba</string>
     <string name="title_activity_prueba_picasso">PruebaPicasso</string>
+    <string name="title_activity_loopjprueba">LOOPJprueba</string>
 
 </resources>
