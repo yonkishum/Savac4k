@@ -10,7 +10,7 @@ import yan.samux.ikaros.com.savac4k.R;
 
 public class BasePrueba extends ActionBarActivity {
 
-	Button pruebas1, pruebas2, pruebas3;
+	Button Picasso, Cards, LOOPJ, Volley;
 	Intent go;
 
 	@Override
@@ -18,11 +18,12 @@ public class BasePrueba extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_base_prueba);
 
-		pruebas1 = (Button) findViewById(R.id.pruPicasso);
-		pruebas2 = (Button) findViewById(R.id.pruCards);
-		pruebas3 = (Button) findViewById(R.id.Loop);
+		Picasso = (Button) findViewById(R.id.pruPicasso);
+		Cards = (Button) findViewById(R.id.pruCards);
+		LOOPJ = (Button) findViewById(R.id.Loop);
+        Volley = (Button) findViewById(R.id.VolleyP);
 
-		pruebas1.setOnClickListener(new View.OnClickListener() {
+		Picasso.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				go = new Intent(getApplicationContext(), PruebaPicasso.class);
@@ -30,7 +31,7 @@ public class BasePrueba extends ActionBarActivity {
 			}
 		});
 
-		pruebas2.setOnClickListener(new View.OnClickListener() {
+		Cards.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				go = new Intent(getApplicationContext(), PruebaCards.class);
@@ -38,13 +39,21 @@ public class BasePrueba extends ActionBarActivity {
 			}
 		});
 
-		pruebas3.setOnClickListener(new View.OnClickListener() {
+		LOOPJ.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				go = new Intent(getApplicationContext(), LOOPJprueba.class);
 				startActivity(go);
 			}
 		});
+
+        Volley.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                go = new Intent(getApplicationContext(), VolleyPrueba.class);
+                startActivity(go);
+            }
+        });
 
 	}
 }

@@ -60,5 +60,6 @@
     <string name="title_activity_base_prueba">BasePrueba</string>
     <string name="title_activity_prueba_picasso">PruebaPicasso</string>
     <string name="title_activity_loopjprueba">LOOPJprueba</string>
+    <string name="title_activity_volley_prueba">VolleyPrueba</string>
 
 </resources>
