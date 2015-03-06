@@ -61,7 +61,7 @@ public class CustomListAdapterClases extends BaseAdapter {
 
             imageLoader = AppControllerClass.getInstance().getImageLoader();
 
-            NetworkImageView thumbNail = (NetworkImageView) convertView.findViewById(R.id.thumbnail);
+            NetworkImageView thumbNail = (NetworkImageView) convertView.findViewById(R.id.thumbnailVolley);
             TextView palabrotas = (TextView) convertView.findViewById(R.id.palabra);
 
         Acciones m = elementos.get(position);
