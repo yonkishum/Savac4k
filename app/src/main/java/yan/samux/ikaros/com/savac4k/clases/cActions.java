@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -27,7 +28,7 @@ public class cActions extends ActionBarActivity {
 
     private static final String TAG = cActions.class.getSimpleName();
 
-    private static final String url = "http://192.168.0.107/savac4kcon/index.php";
+    private static final String url = "http://192.168.56.1/savac4kcon/acciones.php";
     private ProgressDialog pDialog;
     private List<Acciones> accionesList = new ArrayList<Acciones>();
     private CustomListAdapterClases adapter;
@@ -83,6 +84,7 @@ public class cActions extends ActionBarActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 VolleyLog.d(TAG, "Error: " + error.getMessage());
+                Toast.makeText(getBaseContext(), "Se obtuvo un Error: " + error.getMessage(), Toast.LENGTH_LONG).show();
                 hidePDialog();
 
             }
