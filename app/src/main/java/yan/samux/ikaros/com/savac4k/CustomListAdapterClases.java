@@ -63,12 +63,14 @@ public class CustomListAdapterClases extends BaseAdapter {
 
             NetworkImageView thumbNail = (NetworkImageView) convertView.findViewById(R.id.thumbnailVolley);
             TextView palabrotas = (TextView) convertView.findViewById(R.id.palabra);
+            TextView palachina  = (TextView) convertView.findViewById(R.id.enChino);
 
         Acciones m = elementos.get(position);
 
         thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
 
         palabrotas.setText(m.getPalabra());
+        palachina.setText(m.getChinese());
 
         return convertView;
     }

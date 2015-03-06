@@ -1,17 +1,17 @@
 package yan.samux.ikaros.com.savac4k.models;
 
 /**
- * Created by Yonkishum on 03-03-2015.
+ * Created by Yonkishum on 06-03-2015.
  */
-public class Acciones {
+public class Objetos {
 
     private String palabra, thumbnailUrl, chinese;
 
-    public Acciones(){
+    public Objetos(){
 
     }
 
-    public Acciones(String word, String thumbnailUrl, String chinese){
+    public Objetos(String word, String thumbnailUrl, String chinese){
         this.palabra = word;
         this.thumbnailUrl = thumbnailUrl;
         this.chinese = chinese;

@@ -66,6 +66,7 @@ public class cActions extends ActionBarActivity {
                                 Acciones acciones = new Acciones();
                                 acciones.setPalabra(obj.getString("_nombreacciones"));
                                 acciones.setThumbnailUrl(obj.getString("_imagen"));
+                                acciones.setChinese(obj.getString("_enChino"));
 
                                 accionesList.add(acciones);
 

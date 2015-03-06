@@ -18,4 +18,13 @@
         android:textSize="@dimen/palabra"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/enChino"
+        android:layout_alignBottom="@+id/thumbnailVolley"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
