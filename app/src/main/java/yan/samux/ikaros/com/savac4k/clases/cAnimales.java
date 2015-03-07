@@ -18,7 +18,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
-import yan.samux.ikaros.com.savac4k.adapters.CustomListAnimalAdapter;
+import yan.samux.ikaros.com.savac4k.adapters.listas.CustomListAnimalAdapter;
 import yan.samux.ikaros.com.savac4k.R;
 import yan.samux.ikaros.com.savac4k.app.AppControllerClass;
 import yan.samux.ikaros.com.savac4k.models.Animales;

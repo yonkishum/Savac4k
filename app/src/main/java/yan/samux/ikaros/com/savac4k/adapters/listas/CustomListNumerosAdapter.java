@@ -1,4 +1,4 @@
-package yan.samux.ikaros.com.savac4k.adapters;
+package yan.samux.ikaros.com.savac4k.adapters.listas;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,19 +15,20 @@ import java.util.List;
 
 import yan.samux.ikaros.com.savac4k.R;
 import yan.samux.ikaros.com.savac4k.app.AppControllerClass;
-import yan.samux.ikaros.com.savac4k.models.Animales;
+import yan.samux.ikaros.com.savac4k.models.Gestos;
+import yan.samux.ikaros.com.savac4k.models.Numeros;
 
 /**
  * Created by Yonkishum on 06-03-2015.
  */
-public class CustomListAnimalAdapter extends BaseAdapter {
+public class CustomListNumerosAdapter extends BaseAdapter {
 
     private Activity activity;
     private LayoutInflater inflater;
-    private List<Animales> elementos;
+    private List<Numeros> elementos;
     ImageLoader imageLoader = AppControllerClass.getInstance().getImageLoader();
 
-    public CustomListAnimalAdapter(Activity activity, List<Animales> elementos){
+    public CustomListNumerosAdapter(Activity activity, List<Numeros> elementos){
         this.activity = activity;
         this.elementos = elementos;
     }
@@ -67,7 +68,7 @@ public class CustomListAnimalAdapter extends BaseAdapter {
         TextView palachina  = (TextView) convertView.findViewById(R.id.enChino);
         TextView pronuncia  = (TextView) convertView.findViewById(R.id.pronuncia);
 
-        Animales m = elementos.get(position);
+        Numeros m = elementos.get(position);
 
         thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
 

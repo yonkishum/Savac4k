@@ -5,7 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
-import yan.samux.ikaros.com.savac4k.adapters.CustomListActionsClases;
+import yan.samux.ikaros.com.savac4k.adapters.listas.CustomListActionsClases;
 import yan.samux.ikaros.com.savac4k.R;
 import yan.samux.ikaros.com.savac4k.models.Animales;
 

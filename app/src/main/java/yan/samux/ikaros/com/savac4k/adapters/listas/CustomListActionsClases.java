@@ -1,4 +1,4 @@
-package yan.samux.ikaros.com.savac4k.adapters;
+package yan.samux.ikaros.com.savac4k.adapters.listas;
 
 import android.app.Activity;
 import android.content.Context;

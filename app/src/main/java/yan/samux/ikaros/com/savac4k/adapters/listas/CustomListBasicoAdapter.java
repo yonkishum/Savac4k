@@ -1,4 +1,4 @@
-package yan.samux.ikaros.com.savac4k.adapters;
+package yan.samux.ikaros.com.savac4k.adapters.listas;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,6 +16,7 @@ import java.util.List;
 import yan.samux.ikaros.com.savac4k.R;
 import yan.samux.ikaros.com.savac4k.app.AppControllerClass;
 import yan.samux.ikaros.com.savac4k.models.Animales;
+import yan.samux.ikaros.com.savac4k.models.Basico;
 
 /**
  * Created by Yonkishum on 06-03-2015.
@@ -24,10 +25,10 @@ public class CustomListBasicoAdapter extends BaseAdapter {
 
     private Activity activity;
     private LayoutInflater inflater;
-    private List<Animales> elementos;
+    private List<Basico> elementos;
     ImageLoader imageLoader = AppControllerClass.getInstance().getImageLoader();
 
-    public CustomListBasicoAdapter(Activity activity, List<Animales> elementos){
+    public CustomListBasicoAdapter(Activity activity, List<Basico> elementos){
         this.activity = activity;
         this.elementos = elementos;
     }
@@ -67,7 +68,7 @@ public class CustomListBasicoAdapter extends BaseAdapter {
         TextView palachina  = (TextView) convertView.findViewById(R.id.enChino);
         TextView pronuncia  = (TextView) convertView.findViewById(R.id.pronuncia);
 
-        Animales m = elementos.get(position);
+        Basico m = elementos.get(position);
 
         thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
 

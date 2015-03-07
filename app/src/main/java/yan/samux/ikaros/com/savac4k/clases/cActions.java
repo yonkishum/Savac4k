@@ -19,7 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import yan.samux.ikaros.com.savac4k.adapters.CustomListActionsClases;
+import yan.samux.ikaros.com.savac4k.adapters.listas.CustomListActionsClases;
 import yan.samux.ikaros.com.savac4k.R;
 import yan.samux.ikaros.com.savac4k.app.AppControllerClass;
 import yan.samux.ikaros.com.savac4k.models.Acciones;
