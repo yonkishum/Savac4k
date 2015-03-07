@@ -47,7 +47,7 @@ public class cActions extends ActionBarActivity {
 
         pDialog = new ProgressDialog(this);
 
-        pDialog.setMessage("Loading...");
+        pDialog.setMessage("Cargando...");
 
         pDialog.show();
 

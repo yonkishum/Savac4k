@@ -25,7 +25,7 @@ import yan.samux.ikaros.com.savac4k.models.Animales;
 
 public class cAnimales extends ActionBarActivity {
 
-    private static final String TAG = cActions.class.getSimpleName();
+    private static final String TAG = cAnimales.class.getSimpleName();
 
     private static final String url = "http://192.168.56.1/savac4kcon/animales.php";
     private ProgressDialog pDialog;
