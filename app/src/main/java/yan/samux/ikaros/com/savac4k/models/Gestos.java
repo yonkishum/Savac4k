@@ -5,16 +5,17 @@ package yan.samux.ikaros.com.savac4k.models;
  */
 public class Gestos {
 
-    private String palabra, thumbnailUrl, chinese;
+    private String palabra, thumbnailUrl, chinese, pro;
 
     public Gestos(){
 
     }
 
-    public Gestos(String word, String thumbnailUrl, String chinese){
+    public Gestos(String word, String thumbnailUrl, String chinese, String pro){
         this.palabra = word;
         this.thumbnailUrl = thumbnailUrl;
         this.chinese = chinese;
+        this.pro = pro;
     }
 
     public String getPalabra(){
@@ -41,4 +42,11 @@ public class Gestos {
         this.chinese = chinese;
     }
 
+    public String getPro(){
+        return pro;
+    }
+
+    public void setPro(String pro){
+        this.pro = pro;
+    }
 }

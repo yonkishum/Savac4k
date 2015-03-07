@@ -11,20 +11,36 @@
 
     <TextView
         android:id="@+id/palabra"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/thumbnailVolley"
-        android:layout_toRightOf="@+id/thumbnailVolley"
         android:textSize="@dimen/palabra"
-        android:textStyle="bold" />
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="español"
+        android:layout_above="@+id/enChino"
+        android:layout_alignRight="@+id/pronuncia"
+        android:layout_alignEnd="@+id/pronuncia" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
+        android:textSize="@dimen/palabra"
+        android:gravity="right"
         android:id="@+id/enChino"
         android:layout_alignBottom="@+id/thumbnailVolley"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:textSize="@dimen/palabra"
+        android:id="@+id/pronuncia"
+        android:layout_alignTop="@+id/enChino"
+        android:layout_toRightOf="@+id/enChino"
+        android:layout_toEndOf="@+id/enChino" />
 
 </RelativeLayout>

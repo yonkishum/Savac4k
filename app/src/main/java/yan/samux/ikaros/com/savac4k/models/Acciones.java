@@ -5,16 +5,17 @@ package yan.samux.ikaros.com.savac4k.models;
  */
 public class Acciones {
 
-    private String palabra, thumbnailUrl, chinese;
+    private String palabra, thumbnailUrl, chinese, pro;
 
     public Acciones(){
 
     }
 
-    public Acciones(String word, String thumbnailUrl, String chinese){
+    public Acciones(String word, String thumbnailUrl, String chinese, String pro){
         this.palabra = word;
         this.thumbnailUrl = thumbnailUrl;
         this.chinese = chinese;
+        this.pro = pro;
     }
 
     public String getPalabra(){
@@ -39,6 +40,14 @@ public class Acciones {
 
     public void setChinese(String chinese){
         this.chinese = chinese;
+    }
+
+    public String getPro(){
+        return pro;
+    }
+
+    public void setPro(String pro) {
+        this.pro = pro;
     }
 
 }

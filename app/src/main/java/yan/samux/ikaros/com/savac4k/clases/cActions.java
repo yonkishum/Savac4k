@@ -19,7 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import yan.samux.ikaros.com.savac4k.CustomListAdapterClases;
+import yan.samux.ikaros.com.savac4k.adapters.CustomListActionsClases;
 import yan.samux.ikaros.com.savac4k.R;
 import yan.samux.ikaros.com.savac4k.app.AppControllerClass;
 import yan.samux.ikaros.com.savac4k.models.Acciones;
@@ -31,7 +31,7 @@ public class cActions extends ActionBarActivity {
     private static final String url = "http://192.168.56.1/savac4kcon/acciones.php";
     private ProgressDialog pDialog;
     private List<Acciones> accionesList = new ArrayList<Acciones>();
-    private CustomListAdapterClases adapter;
+    private CustomListActionsClases adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class cActions extends ActionBarActivity {
 
         ListView listView = (ListView) findViewById(R.id.csAcciones);
 
-        adapter = new CustomListAdapterClases(this, accionesList);
+        adapter = new CustomListActionsClases(this, accionesList);
 
         listView.setAdapter(adapter);
 
@@ -67,6 +67,7 @@ public class cActions extends ActionBarActivity {
                                 acciones.setPalabra(obj.getString("_nombreacciones"));
                                 acciones.setThumbnailUrl(obj.getString("_imagen"));
                                 acciones.setChinese(obj.getString("_enChino"));
+                                acciones.setPro(obj.getString("_pronunciacion"));
 
                                 accionesList.add(acciones);
 

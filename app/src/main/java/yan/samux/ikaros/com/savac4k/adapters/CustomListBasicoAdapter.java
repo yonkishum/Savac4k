@@ -1,4 +1,4 @@
-package yan.samux.ikaros.com.savac4k;
+package yan.samux.ikaros.com.savac4k.adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,20 +13,21 @@ import com.android.volley.toolbox.NetworkImageView;
 
 import java.util.List;
 
+import yan.samux.ikaros.com.savac4k.R;
 import yan.samux.ikaros.com.savac4k.app.AppControllerClass;
-import yan.samux.ikaros.com.savac4k.models.Acciones;
+import yan.samux.ikaros.com.savac4k.models.Animales;
 
 /**
- * Created by Yonkishum on 03-03-2015.
+ * Created by Yonkishum on 06-03-2015.
  */
-public class CustomListAdapterClases extends BaseAdapter {
+public class CustomListBasicoAdapter extends BaseAdapter {
 
     private Activity activity;
     private LayoutInflater inflater;
-    private List<Acciones> elementos;
+    private List<Animales> elementos;
     ImageLoader imageLoader = AppControllerClass.getInstance().getImageLoader();
 
-    public CustomListAdapterClases(Activity activity, List<Acciones> elementos){
+    public CustomListBasicoAdapter(Activity activity, List<Animales> elementos){
         this.activity = activity;
         this.elementos = elementos;
     }
@@ -61,17 +62,20 @@ public class CustomListAdapterClases extends BaseAdapter {
 
             imageLoader = AppControllerClass.getInstance().getImageLoader();
 
-            NetworkImageView thumbNail = (NetworkImageView) convertView.findViewById(R.id.thumbnailVolley);
-            TextView palabrotas = (TextView) convertView.findViewById(R.id.palabra);
-            TextView palachina  = (TextView) convertView.findViewById(R.id.enChino);
+        NetworkImageView thumbNail = (NetworkImageView) convertView.findViewById(R.id.thumbnailVolley);
+        TextView palabrotas = (TextView) convertView.findViewById(R.id.palabra);
+        TextView palachina  = (TextView) convertView.findViewById(R.id.enChino);
+        TextView pronuncia  = (TextView) convertView.findViewById(R.id.pronuncia);
 
-        Acciones m = elementos.get(position);
+        Animales m = elementos.get(position);
 
         thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
 
         palabrotas.setText(m.getPalabra());
         palachina.setText(m.getChinese());
+        pronuncia.setText("(" + m.getPro() + ")");
 
         return convertView;
     }
+
 }
